@@ -1,45 +1,52 @@
-# CloudForge Platform
+# 🚀 CloudForge Platform
 
-Production-grade cloud-native DevOps platform.
+> A DevOps & Cloud-Native Microservices Platform using Docker, Kubernetes, and CI/CD automation.
 
-## Overview
+---
 
-CloudForge is a complete DevOps engineering platform designed to simulate real-world production infrastructure using modern cloud-native technologies.
+## 📌 Overview
 
-## Features
+CloudForge Platform is a hands-on DevOps project that simulates real-world cloud infrastructure using modern tools like Docker, Kubernetes, and GitHub Actions.
 
-- Microservices architecture
-- Docker containerization
-- Kubernetes orchestration
-- CI/CD automation
-- Infrastructure as Code
-- Monitoring and observability
-- Centralized logging
-- Security scanning
-- GitOps workflows
+It demonstrates how microservices are built, containerized, deployed, and managed in a cloud-native environment.
 
-## Tech Stack
+---
 
+## 🏗 Architecture
+
+User → Kubernetes Service → Node.js Auth Service  
+                     ↓  
+           PostgreSQL + Redis
+
+---
+
+## ⚙️ Tech Stack
+
+- Node.js + Express
 - Docker
-- Kubernetes
-- Terraform
-- Jenkins
-- GitHub Actions
-- Prometheus
-- Grafana
-- ELK Stack
-- AWS
-- Ansible
+- Docker Compose
+- Kubernetes (Minikube)
+- GitHub Actions (CI/CD)
+- PostgreSQL
+- Redis
+- Linux (Ubuntu/WSL)
 
-## Repository Structure
+---
 
+## 🚀 Features
+
+- Microservice-based backend
+- Dockerized application
+- CI/CD automation pipeline
+- Kubernetes deployment with replicas
+- Self-healing containers
+- Service exposure via NodePort
+- Multi-container orchestration
+
+---
+
+## 🧪 How to Run
+
+### Docker Compose
 ```bash
-frontend/
-backend/
-docker/
-kubernetes/
-terraform/
-monitoring/
-logging/
-security/
-docs/# cloudforge-platform
+docker compose up
