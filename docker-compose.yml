@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  auth-service:
+    build: ./backend/auth-service
+    container_name: auth-service
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: cloudforge
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:latest
+    container_name: redis-cache
+    ports:
+      - "6379:6379"
